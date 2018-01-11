@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Study.iml" filepath="$PROJECT_DIR$/.idea/Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie/microservice-consumer-movie.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie/microservice-consumer-movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie -ribbon - properties-customizing/microservice-consumer-movie -ribbon - properties-customizing.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie -ribbon - properties-customizing/microservice-consumer-movie -ribbon - properties-customizing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie -ribbon -without-eureka/microservice-consumer-movie -ribbon -without-eureka.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie -ribbon -without-eureka/microservice-consumer-movie -ribbon -without-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie-feign/microservice-consumer-movie-feign.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie-feign/microservice-consumer-movie-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie-feign-customizing/microservice-consumer-movie-feign-customizing.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie-feign-customizing/microservice-consumer-movie-feign-customizing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie-ribbon/microservice-consumer-movie-ribbon.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud/microservice-consumer-movie-ribbon/microservice-consumer-movie-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-discovery-eureka/microservice-discovery-eureka.iml" filepath="$PROJECT_DIR$/microservice-discovery-eureka/microservice-discovery-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud/microservice-discovery-eureka-ha/microservice-discovery-eureka-ha.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud/microservice-discovery-eureka-ha/microservice-discovery-eureka-ha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud/microservice-provider-user/microservice-provider-user.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud/microservice-provider-user/microservice-provider-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud/microservice-spring-cloud.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud/microservice-spring-cloud.iml" />
+    </modules>
+  </component>
+</project>

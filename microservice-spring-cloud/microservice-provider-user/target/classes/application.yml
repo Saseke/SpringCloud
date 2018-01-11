@@ -1,0 +1,30 @@
+server:
+  port: 7900
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/day8?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      username: root
+      password: "000000"
+      driver-class-name: com.mysql.jdbc.Driver
+      min-idle: 5
+      max-active: 100
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 50
+      remove-abandoned: true
+      filters: stat
+  application:
+    name: microservice-provider-user   # 全部小写 配置应用的名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/                                   #  http://user:password@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    metadata-map:
+      zone: ABC   # eureka 可以理解的元数据
+      yoke: YOKE   # 不影响客户端的行为

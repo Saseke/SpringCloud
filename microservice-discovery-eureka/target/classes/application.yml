@@ -1,0 +1,17 @@
+
+server:
+  port: 8761
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password@localhost:8761/eureka
+    register-with-eureka: false
+    fetch-registry: false
+#    healthcheck:
+#      enabled: true  #配置健康检查
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: password
