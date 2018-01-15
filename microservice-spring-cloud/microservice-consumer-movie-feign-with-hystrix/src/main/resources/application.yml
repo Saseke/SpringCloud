@@ -1,0 +1,21 @@
+#j简单的使用feign
+server:
+  port: 7901
+spring:
+  application:
+    name: microservice-consumer-movie-feign-with-hystrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+#  配置health输出详细信息
+management:
+  security:
+    enabled: false
+feign:
+  hystrix:
+    enabled: true   # 开启hystrix
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000

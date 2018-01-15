@@ -1,0 +1,24 @@
+#j简单的使用feign
+server:
+  port: 7901
+spring:
+  application:
+    name: microservice-consumer-movie
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+feign:
+  hystrix:
+    enabled: true
+management:
+  security:
+    enabled: false
+logging:
+  level:
+    com.itmuch.cloud.microservicesimpleconsumermovie.feign.UserFeignClient: debug
+#    解决第一次请求超时异常的方案
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000

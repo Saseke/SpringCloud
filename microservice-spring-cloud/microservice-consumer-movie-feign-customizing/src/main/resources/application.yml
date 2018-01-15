@@ -3,7 +3,7 @@ server:
   port: 7901
 spring:
   application:
-    name: microservice-consumer-movie
+    name: microservice-consumer-movie-feign-customizing
 eureka:
   client:
     service-url:

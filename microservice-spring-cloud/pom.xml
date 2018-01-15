@@ -17,6 +17,14 @@
         <module>microservice-consumer-movie-feign</module>
         <module>microservice-consumer-movie-feign-customizing</module>
         <module>microservice-discovery-eureka-ha</module>
+        <module>microservice-consumer-movie-ribbon-test</module>
+        <module>microservice-consumer-movie-ribbon-with-hystrix</module>
+        <module>microservice-consumer-movie-ribbon-with-hystrix-propagation</module>
+        <module>microservice-consumer-movie-feign-with-hystrix</module>
+        <module>microservice-consumer-movie-feign-customizing-without-hystrix</module>
+        <module>microservice-consumer-movie-feign-with-hystrix-factory</module>
+        <module>microservice-hystrix-dashboard</module>
+        <module>microservice-hystrix-dashboard-turbine</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,7 +41,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.M5</version>
+                <version>Dalston SR5</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

@@ -1,3 +1,4 @@
+#实现eureka高可用
 server:
   port: 7900
 spring:
@@ -21,10 +22,12 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://peer1:8761/eureka/                                   #  http://user:password@localhost:8761/eureka
+      defaultZone:  http://user:password@localhost:8761/eureka     #http://peer1:8761/eureka/,http://peer2:8762/eureka/,http://peer3:8763/eureka/   实现高可用
   instance:
-    prefer-ip-address: true
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    prefer-ip-address: true     #  配置的是打开eureka主界面时，鼠标移动上去时，左下角的url:采用ip的形式，默认是应用名称
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
     metadata-map:
       zone: ABC   # eureka 可以理解的元数据
-      yoke: YOKE   # 不影响客户端的行为
+      yoke: YOKE     # 不影响客户端的行为
+#    appname: USER-SERVICE-HAHA    #  配置app名称 t填坑用最原本的配置
+#    hostname: user

@@ -11,6 +11,9 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 控制主体
  */
@@ -51,9 +54,24 @@ public class UserController {
     public User postUser(@RequestBody User user) {
         return user;
     }
-//    该请求不会成功
+
+    //    该请求不会成功
     @GetMapping("/get-user")
     public User getUser(User user) {
         return user;
+    }
+
+    @GetMapping("list-all")
+    public List<User> listAll() {
+        ArrayList<User> list = new ArrayList<>();
+        User user = new User(1L, "zhangsan");
+        User user2 = new User(2L, "zhangsan");
+        User user3 = new User(3L, "zhangsan");
+        User user4 = new User(4L, "zhangsan");
+        list.add(user);
+        list.add(user2);
+        list.add(user3);
+        list.add(user4);
+        return list;
     }
 }
