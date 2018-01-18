@@ -23,6 +23,7 @@
         <module name="microservice-discovery-eureka" />
         <module name="microservice-discovery-eureka-ha" />
         <module name="microservice-gateway-zuul" />
+        <module name="microservice-gateway-zuul-reg-exp" />
         <module name="microservice-hystrix-dashboard" />
         <module name="microservice-hystrix-dashboard-turbine" />
         <module name="microservice-hystrix-dashboard-turbine2" />
@@ -49,6 +50,7 @@
       <module name="microservice-discovery-eureka" target="1.8" />
       <module name="microservice-discovery-eureka-ha" target="1.8" />
       <module name="microservice-gateway-zuul" target="1.8" />
+      <module name="microservice-gateway-zuul-reg-exp" target="1.8" />
       <module name="microservice-hystrix-dashboard" target="1.8" />
       <module name="microservice-hystrix-dashboard-turbine" target="1.8" />
       <module name="microservice-hystrix-dashboard-turbine2" target="1.8" />
