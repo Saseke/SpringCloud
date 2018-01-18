@@ -1,6 +1,6 @@
 #实现eureka高可用
 server:
-  port: 7900
+  port: 7901
 spring:
   datasource:
     druid:

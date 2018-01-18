@@ -1,6 +1,6 @@
 #j简单的使用feign
 server:
-  port: 7901
+  port: 7900
 spring:
   application:
     name: microservice-consumer-movie-feign-with-hystrix

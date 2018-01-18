@@ -11,5 +11,6 @@ spring:
     name: microservice-hystrix-turbine
 turbine:
   aggregator:
-    clusterConfig: MICROSERVICE-CONSUMER-MOVIE-RIBBON-HYSTRIX
-  appConfig: microservice-consumer-movie-ribbon-with-hystrix
+    clusterConfig: default                           # MICROSERVICE-CONSUMER-MOVIE-RIBBON-WITH-HYSTRIX,MICROSERVICE-PROVIDER-USER
+  appConfig: microservice-consumer-movie-ribbon-with-hystrix, microservice-consumer-movie-feign-with-hystrix              #  监控名称是spring.applicaiton.name的值
+  cluster-name-expression: "'default'"

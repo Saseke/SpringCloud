@@ -18,10 +18,15 @@
         <module name="microservice-consumer-movie-ribbon-test" />
         <module name="microservice-consumer-movie-ribbon-with-hystrix" />
         <module name="microservice-consumer-movie-ribbon-with-hystrix-propagation" />
+        <module name="microservice-consumer-movie-ribbon-with-hystrix2" />
+        <module name="microservice-consumer-movie-ribbon-with-hystrix3" />
         <module name="microservice-discovery-eureka" />
         <module name="microservice-discovery-eureka-ha" />
+        <module name="microservice-gateway-zuul" />
         <module name="microservice-hystrix-dashboard" />
         <module name="microservice-hystrix-dashboard-turbine" />
+        <module name="microservice-hystrix-dashboard-turbine2" />
+        <module name="microservice-hystrix-dashboard-turbine3" />
         <module name="microservice-provider-user" />
         <module name="microservicediscoveryeureka" />
       </profile>
@@ -39,10 +44,15 @@
       <module name="microservice-consumer-movie-ribbon-test" target="1.8" />
       <module name="microservice-consumer-movie-ribbon-with-hystrix" target="1.8" />
       <module name="microservice-consumer-movie-ribbon-with-hystrix-propagation" target="1.8" />
+      <module name="microservice-consumer-movie-ribbon-with-hystrix2" target="1.8" />
+      <module name="microservice-consumer-movie-ribbon-with-hystrix3" target="1.8" />
       <module name="microservice-discovery-eureka" target="1.8" />
       <module name="microservice-discovery-eureka-ha" target="1.8" />
+      <module name="microservice-gateway-zuul" target="1.8" />
       <module name="microservice-hystrix-dashboard" target="1.8" />
       <module name="microservice-hystrix-dashboard-turbine" target="1.8" />
+      <module name="microservice-hystrix-dashboard-turbine2" target="1.8" />
+      <module name="microservice-hystrix-dashboard-turbine3" target="1.8" />
       <module name="microservice-provider-user" target="1.8" />
       <module name="microservice-spring-cloud" target="1.8" />
       <module name="microservicediscoveryeureka" target="1.5" />
